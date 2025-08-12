@@ -1,128 +1,147 @@
 {% extends 'base.html' %} {% load static %} {% block content %}
+
 <!-- Hero Section -->
 <section
   class="hero-section text-center text-white bg-light py-5"
-  data-aos="fade-right"
-  data-aos-delay="400"
+  data-aos="fade-down"
+  data-aos-delay="300"
 >
-  <div class="container overflow-hidden">
-    <h1 class="display-4 fw-bold">Mobile App Development</h1>
-    <p class="lead text-muted mt-3">
-      Elevate your business with our customized mobile app solutions designed
-      for user engagement and high performance on Android and iOS platforms.
-    </p>
-    <a
-      href="{% url 'onboarding' %}"
-      class="btn btn-secondary btn-lg mt-3 rounded-pill"
-      >Get Started</a
-    >
+  <div class="container">
+    <h1 class="display-4 fw-bold">Our Services</h1>
   </div>
 </section>
 
-<!-- Service Details -->
-<section class="py-5" data-aos="fade-up" data-aos-delay="500">
-  <div class="container overflow-hidden">
-    <div class="row">
-      <div class="col-md-6">
-        <h2 class="section-title text-center">Our Mobile App Solutions</h2>
-        <p
-          class="lead text-muted mx-auto mb-5"
-          style="max-width: 700px"
-          data-aos="fade-right"
-          data-aos-delay="600"
-        >
-          Our team specializes in crafting tailored mobile applications that
-          drive engagement, streamline processes, and offer seamless user
-          experiences on Android and iOS. From native to cross-platform apps, we
-          cover the full lifecycle of app development.
-        </p>
-        <p
-          class="lead text-muted mx-auto mb-5"
-          style="max-width: 700px"
-          data-aos="fade-right"
-          data-aos-delay="700"
-        >
-          Whether you need an e-commerce app, social networking platform, or
-          custom enterprise solution, we ensure that your mobile app is
-          optimized for performance, security, and scalability.
-        </p>
+<!-- Services Grid -->
+<section class="py-5" data-aos="fade-up" data-aos-delay="400">
+  <div class="container">
+    <div class="row g-4">
+      <!-- ERPNext -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body text-center">
+            <img
+              src="{% static 'images/icons/erpnext.svg' %}"
+              alt="ERPNext"
+              class="mb-3"
+              style="width: 60px"
+            />
+            <h4 class="mb-3">ERPNext Implementation</h4>
+            <p>
+              Streamline your enterprise resource planning with ERPNext. We
+              customize and deploy ERPNext modules that fit your business needs.
+            </p>
+            <a href="#" class="btn btn-outline-primary mt-3 rounded-pill"
+              >Learn More</a
+            >
+          </div>
+        </div>
       </div>
-      <div class="col-md-6">
-        <img
-          src="#"
-          alt="Mobile App Development"
-          class="img-fluid rounded shadow"
-          data-aos="fade-left"
-          data-aos-delay="600"
-        />
+
+      <!-- Frappe Framework -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body text-center">
+            <img
+              src="{% static 'images/icons/frappe.svg' %}"
+              alt="Frappe"
+              class="mb-3"
+              style="width: 60px"
+            />
+            <h4 class="mb-3">Frappe Framework Development</h4>
+            <p>
+              Custom web apps powered by the Frappe framework. Agile, scalable,
+              and tailored for your unique workflows.
+            </p>
+            <a href="#" class="btn btn-outline-primary mt-3 rounded-pill"
+              >Learn More</a
+            >
+          </div>
+        </div>
       </div>
+
+      <!-- HR Management -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body text-center">
+            <img
+              src="{% static 'images/icons/hr.svg' %}"
+              alt="HR Management"
+              class="mb-3"
+              style="width: 60px"
+            />
+            <h4 class="mb-3">HR Management Solutions</h4>
+            <p>
+              Optimize your human resources processes with automation and
+              integrated management tools.
+            </p>
+            <a href="#" class="btn btn-outline-primary mt-3 rounded-pill"
+              >Learn More</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Manufacturing -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body text-center">
+            <img
+              src="{% static 'images/icons/manufacturing.svg' %}"
+              alt="Manufacturing"
+              class="mb-3"
+              style="width: 60px"
+            />
+            <h4 class="mb-3">Manufacturing ERP Modules</h4>
+            <p>
+              Streamline production and inventory management with our tailored
+              manufacturing ERP solutions.
+            </p>
+            <a href="#" class="btn btn-outline-primary mt-3 rounded-pill"
+              >Learn More</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Accounting -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body text-center">
+            <img
+              src="{% static 'images/icons/accounting.svg' %}"
+              alt="Accounting"
+              class="mb-3"
+              style="width: 60px"
+            />
+            <h4 class="mb-3">Accounting & Finance</h4>
+            <p>
+              Automate your accounting processes with our robust financial
+              management services.
+            </p>
+            <a href="#" class="btn btn-outline-primary mt-3 rounded-pill"
+              >Learn More</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Add more services similarly -->
     </div>
   </div>
 </section>
 
-<!-- Features/Benefits Section -->
-<section class="py-5">
-  <div class="container overflow-hidden">
-    <div class="row text-center">
-      <div class="col-md-4 mb-4" data-aos="fade-right" data-aos-delay="400">
-        <div class="card shadow border-0 h-100 course-card">
-          <div class="card-body py-5">
-            <h3><i class="fas fa-mobile-alt"></i></h3>
-            <h4>Native & Cross-Platform Apps</h4>
-            <p>
-              We develop both native and cross-platform apps, ensuring the best
-              balance of performance and accessibility on Android and iOS
-              devices.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="500">
-        <div class="card shadow border-0 h-100 course-card">
-          <div class="card-body py-5">
-            <h3><i class="fas fa-users"></i></h3>
-            <h4>User-Centric Design</h4>
-            <p>
-              Our apps are built with user experience at the forefront, focusing
-              on intuitive navigation, appealing aesthetics, and seamless
-              interaction.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4" data-aos="fade-left" data-aos-delay="600">
-        <div class="card shadow border-0 h-100 course-card">
-          <div class="card-body py-5">
-            <h3><i class="fas fa-shield-alt"></i></h3>
-            <h4>Security & Performance</h4>
-            <p>
-              We prioritize app security and high performance, implementing
-              secure authentication, data encryption, and optimizing load times.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Call-to-Action Section -->
+<!-- Call to Action -->
 <section
-  class="hero-section text-center bg-light py-5"
+  class="bg-light text-center py-5"
   data-aos="fade-up"
-  data-aos-delay="400"
+  data-aos-delay="600"
 >
-  <div class="container text-center overflow-hidden">
-    <h2 class="section-title text-center">Ready to Launch Your Mobile App?</h2>
-    <p class="lead text-muted mt-3">
-      Let’s bring your ideas to life with a custom mobile app tailored to meet
-      your business needs and engage your users.
+  <div class="container">
+    <h2>Ready to transform your business?</h2>
+    <p class="lead mb-4">
+      Contact us today to discuss how our solutions can help you grow.
     </p>
-    <a
-      href="{% url 'onboarding' %}"
-      class="btn btn-secondary btn-lg mt-3 rounded-pill"
-      data-aos="fade-up"
-      data-aos-delay="500"
+    <a href="{% url 'contact' %}" class="btn btn-primary btn-lg rounded-pill"
       >Get Started</a
     >
   </div>
