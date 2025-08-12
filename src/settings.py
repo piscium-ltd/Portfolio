@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-2$j_q3$lm0p&!$pr5nmi=s0d%z0v3k_j!g*w(%%g%p)ktfp*c4
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['piscium.co.ke']
 
 
 # Application definition
