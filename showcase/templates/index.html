@@ -10,14 +10,33 @@
       <!-- Left Side: Text Content -->
       <div class="col-md-7 col-12 text-md-start text-center">
         <h1 class="display-4 fw-bold">
-          Empowering Your Business with Innovative Tech Solutions
+          Powering Businesses With Future-Ready ERP Solutions
         </h1>
         <p class="lead text-muted">
-          We bring creativity and technology together to drive your business
-          forward. Let’s build a smarter future, together.
+          Piscium Solutions specializes in implementing, customizing, and
+          supporting ERP systems that align perfectly with your business needs.
+          With years of experience in ERPNext and the Frappe Framework, we make
+          technology work for you, not the other way around.
         </p>
         <!-- Core Values as a Paragraph with Icons -->
-        <p class="fw-bold text-muted lead">Integrity . Excelent . Discipline</p>
+        <!-- <p class="fw-bold text-muted lead">Integrity . Excelent . Discipline</p> -->
+        <!-- Core Values Badges -->
+        <div
+          class="d-flex flex-wrap justify-content-md-start justify-content-center gap-2 mb-3"
+        >
+          <span
+            class="badge rounded-pill bg-primary text-white px-3 py-2 shadow-sm"
+            >Integrity</span
+          >
+          <span
+            class="badge rounded-pill bg-warning text-dark px-3 py-2 shadow-sm"
+            >Excellence</span
+          >
+          <span
+            class="badge rounded-pill bg-secondary text-white px-3 py-2 shadow-sm"
+            >Discipline</span
+          >
+        </div>
         <a
           href="{% url 'onboarding' %}"
           class="btn btn-secondary btn-lg mt-3 rounded-pill me-3"
@@ -40,12 +59,16 @@
             src="#"
             alt="Background Logo"
             class="hero-bg-logo position-absolute top-50 start-50 translate-middle img-fluid"
+            style="opacity: 0.05; max-width: 80%"
           />
-          <!-- Main Image: Person with Laptop -->
+
+          <!-- Main Image -->
           <img
-            src="#"
-            alt="Person holding a laptop"
-            class="hero-main-image position-relative img-fluid"
+            src="{% static 'img/erp.jpg' %}"
+            alt="ERP Isometric Illustration"
+            class="hero-main-image position-relative img-fluid rounded shadow-lg"
+            data-aos="zoom-in"
+            data-aos-delay="300"
           />
         </div>
       </div>
@@ -54,6 +77,7 @@
 </section>
 
 <!-- About Section -->
+<!-- About Section -->
 <section
   id="about-section"
   class="text-center py-5"
@@ -61,21 +85,69 @@
   data-aos-delay="400"
 >
   <div class="container overflow-hidden">
-    <!-- Section Heading and Description -->
-    <h2 class="section-title">Who we are</h2>
+    <!-- Section Heading -->
+    <h2 class="section-title fw-bold mb-4">Who We Are</h2>
+
+    <!-- Description -->
     <p
       class="lead text-muted mx-auto mb-5"
-      style="max-width: 700px"
+      style="max-width: 750px"
       data-aos="fade-right"
       data-aos-delay="500"
     >
-      Piscium Solutions is a tech-solutions company built by passionate
-      individuals, dedicated to helping our clients continuously create value
-      for their customers. We believe in transforming ideas into reality through
-      technology.
+      At <strong>Piscium Solutions</strong>, we believe business growth comes
+      from smart, disciplined, and well-integrated technology. We’re not just
+      developers, we’re your strategic partners, committed to understanding your
+      challenges and turning them into opportunities.
     </p>
 
-    <!-- Statistic Cards -->
+    <!-- Core Values -->
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-3 col-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
+        <div class="p-4 border rounded shadow-sm h-100">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/3062/3062634.png"
+            alt="Integrity Icon"
+            class="mb-3"
+            style="width: 50px"
+          />
+          <h5 class="fw-bold">Integrity</h5>
+          <p class="text-muted small">
+            We uphold honesty and transparency in every solution we deliver.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-3 col-6 mb-4" data-aos="zoom-in" data-aos-delay="300">
+        <div class="p-4 border rounded shadow-sm h-100">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png"
+            alt="Excellence Icon"
+            class="mb-3"
+            style="width: 50px"
+          />
+          <h5 class="fw-bold">Excellence</h5>
+          <p class="text-muted small">
+            We pursue the highest quality standards in every project.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-3 col-6 mb-4" data-aos="zoom-in" data-aos-delay="400">
+        <div class="p-4 border rounded shadow-sm h-100">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+            alt="Discipline Icon"
+            class="mb-3"
+            style="width: 50px"
+          />
+          <h5 class="fw-bold">Discipline</h5>
+          <p class="text-muted small">
+            We maintain focus and consistency to deliver on time, every time.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats -->
     <div class="row justify-content-center mx-0">
       <div
         class="col-lg-3 col-md-4 col-6 mb-4"
@@ -116,9 +188,10 @@
     <!-- Section Heading and Description -->
     <h2 class="section-title">What we do</h2>
     <p class="lead text-muted mx-auto mb-5" style="max-width: 700px">
-      We help businesses save time and increase sales by automating tasks and
-      enhancing their online presence. Explore our services below to see how we
-      can support your growth.
+      We design, implement, and optimize ERP solutions that help businesses
+      operate smarter and faster powered by ERPNext and the Frappe
+      Framework.Explore our services below to see how we can support your
+      growth.
     </p>
     <a href="{% url 'services' %}" class="btn btn-outline-primary"
       >View Services</a
