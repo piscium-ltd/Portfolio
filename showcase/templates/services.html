@@ -2,147 +2,244 @@
 
 <!-- Hero Section -->
 <section
-  class="hero-section text-center text-white bg-light py-5"
+  class="hero-section text-center text-white bg-primary py-5"
   data-aos="fade-down"
   data-aos-delay="300"
 >
   <div class="container">
-    <h1 class="display-4 fw-bold">Our Services</h1>
+    <h1 class="display-4 text-white fw-bold">Services</h1>
+    <p class="lead mt-3">
+      Piscium Solutions provides ERP consultancy, implementation, and
+      customization services on ERPNext, Frappe HR, Frappe CRM, Frappe Lending,
+      Frappe Learning, Frappe Education, and Frappe Insights. 
+    </p>
   </div>
 </section>
 
-<!-- Services Grid -->
-<section class="py-5" data-aos="fade-up" data-aos-delay="400">
+<!-- Services Zig-Zag -->
+<section class="py-5">
   <div class="container">
-    <div class="row g-4">
-      <!-- ERPNext -->
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm border-0">
-          <div class="card-body text-center">
-            <img
-              src="{% static 'images/icons/erpnext.svg' %}"
-              alt="ERPNext"
-              class="mb-3"
-              style="width: 60px"
-            />
-            <h4 class="mb-3">ERPNext Implementation</h4>
-            <p>
-              Streamline your enterprise resource planning with ERPNext. We
-              customize and deploy ERPNext modules that fit your business needs.
-            </p>
-            <a href="#" class="btn btn-outline-primary mt-3 rounded-pill"
-              >Learn More</a
-            >
-          </div>
-        </div>
+     <div class="row align-items-center mb-5 py-4 bg-white">
+      <div class="col-md-6">
+        <h2>ERPNext</h2>
+        <p class="lead">
+          We focus on ERP solutions for mid-sized and large enterprises.
+        </p>
       </div>
-
-      <!-- Frappe Framework -->
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm border-0">
-          <div class="card-body text-center">
-            <img
-              src="{% static 'images/icons/frappe.svg' %}"
-              alt="Frappe"
-              class="mb-3"
-              style="width: 60px"
-            />
-            <h4 class="mb-3">Frappe Framework Development</h4>
-            <p>
-              Custom web apps powered by the Frappe framework. Agile, scalable,
-              and tailored for your unique workflows.
-            </p>
-            <a href="#" class="btn btn-outline-primary mt-3 rounded-pill"
-              >Learn More</a
-            >
-          </div>
-        </div>
+      <div class="col-md-6 text-center">
+        <img
+          src="{% static 'img/erpnext.jpeg' %}"
+          alt="ERPNext"
+          class="img-fluid rounded shadow"
+        />
       </div>
+    </div>
 
-      <!-- HR Management -->
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm border-0">
-          <div class="card-body text-center">
-            <img
-              src="{% static 'images/icons/hr.svg' %}"
-              alt="HR Management"
-              class="mb-3"
-              style="width: 60px"
-            />
-            <h4 class="mb-3">HR Management Solutions</h4>
-            <p>
-              Optimize your human resources processes with automation and
-              integrated management tools.
-            </p>
-            <a href="#" class="btn btn-outline-primary mt-3 rounded-pill"
-              >Learn More</a
-            >
-          </div>
-        </div>
+    <!-- Accounting -->
+    <div class="row align-items-center mb-5 py-4 flex-md-row-reverse bg-light">
+      <div class="col-md-6">
+      <h2>Accounting</h2>
+        <p>Manage your accounts accurately with the right controls.</p>
+        <p>
+          Maintaining accurate financial records is crucial—not just for
+          statutory compliance, but for a clear, real-time view of your
+          organization’s financial health. With ERPNext, you can streamline
+          compliance, reduce manual spreadsheet efforts, and minimize reliance
+          on external auditors.
+        </p>
+        <p>
+          ERPNext integrates with inventory, manufacturing, HR, and more—turning
+          your ERP into a centralized financial hub.
+        </p>
       </div>
-
-      <!-- Manufacturing -->
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm border-0">
-          <div class="card-body text-center">
-            <img
-              src="{% static 'images/icons/manufacturing.svg' %}"
-              alt="Manufacturing"
-              class="mb-3"
-              style="width: 60px"
-            />
-            <h4 class="mb-3">Manufacturing ERP Modules</h4>
-            <p>
-              Streamline production and inventory management with our tailored
-              manufacturing ERP solutions.
-            </p>
-            <a href="#" class="btn btn-outline-primary mt-3 rounded-pill"
-              >Learn More</a
-            >
-          </div>
-        </div>
+      <div class="col-md-6 text-center">
+        <img
+          src="{% static 'img/Accounting.jpg' %}"
+          alt="Accounting"
+          class="img-fluid rounded shadow"
+        />
       </div>
+    </div>
 
-      <!-- Accounting -->
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm border-0">
-          <div class="card-body text-center">
-            <img
-              src="{% static 'images/icons/accounting.svg' %}"
-              alt="Accounting"
-              class="mb-3"
-              style="width: 60px"
-            />
-            <h4 class="mb-3">Accounting & Finance</h4>
-            <p>
-              Automate your accounting processes with our robust financial
-              management services.
-            </p>
-            <a href="#" class="btn btn-outline-primary mt-3 rounded-pill"
-              >Learn More</a
-            >
-          </div>
-        </div>
+    <!-- Sales & Purchase -->
+    <div class="row align-items-center mb-5 py-4 bg-white">
+      <div class="col-md-6">
+        <h2>Sales &amp; Purchase</h2>
+        <p>Procure, receive, pay, and manage suppliers efficiently.</p>
+        <p>
+          With ERPNext, digitize the entire purchase flow—from material requests
+          to invoicing—while ensuring budget limits are enforced.
+        </p>
+        <p>
+          Sales is the growth engine of an organization. ERPNext keeps it
+          well-oiled with CRM and order-to-cash tools. Nurture your pipeline,
+          create professional quotations & invoices, manage deliveries and
+          receivables with ease.
+        </p>
       </div>
+      <div class="col-md-6 text-center">
+        <img
+          src="{% static 'img/purchase.jpg' %}"
+          alt="Sales and Purchase"
+          class="img-fluid rounded shadow"
+        />
+      </div>
+    </div>
 
-      <!-- Add more services similarly -->
+    <!-- HR & Payroll -->
+    <div class="row align-items-center mb-5 py-4 flex-md-row-reverse bg-light">
+      <div class="col-md-6">
+        <h2>HR &amp; Payroll</h2>
+        <p>The HR revolution brewing just for you.</p>
+        <p>
+          Frappe HR is a 100% open source, modern, user-friendly solution to
+          drive excellence within your team. Simplify your HR and Payroll
+          operations with a product crafted as per your needs.
+        </p>
+      </div>
+      <div class="col-md-6 text-center">
+        <img
+          src="{% static 'img/hr.png' %}"
+          alt="HR & Payroll"
+          class="img-fluid rounded shadow"
+        />
+      </div>
+    </div>
+     <!-- Manufacturing -->
+    <div class="row align-items-center mb-5 py-4 bg-white">
+      <div class="col-md-6">
+        <h2>Manufacturing</h2>
+        <p>
+          Get 100% visibility and traceability in your manufacturing process.
+        </p>
+        <p>
+          With ERPNext’s manufacturing module, you can track multi-level BOMs,
+          integrate with sales and stock, estimate raw material needs, and
+          ensure quality checks with accurate valuation of produced items.
+        </p>
+      </div>
+      <div class="col-md-6 text-center">
+        <img
+          src="{% static 'img/manufacturing.jpeg' %}"
+          alt="Manufacturing"
+          class="img-fluid rounded shadow"
+        />
+      </div>
+    </div>
+
+    <!-- CRM -->
+    <div class="row align-items-center mb-5 py-4 flex-md-row-reverse bg-light">
+      <div class="col-md-6">
+        <h2>CRM</h2>
+        <p>Close more deals with a modular and flexible CRM.</p>
+        <p>
+          ERPNext CRM tools help you strengthen customer relationships. Track
+          every prospect, create competitive quotations, and manage sales
+          smoothly to stay ahead of the competition.
+        </p>
+      </div>
+      <div class="col-md-6 text-center">
+        <img
+          src="{% static 'img/crm.png' %}"
+          alt="CRM"
+          class="img-fluid rounded shadow"
+        />
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="row align-items-center mb-5 py-4 bg-white">
+      <div class="col-md-6">
+        <h2>Projects</h2>
+        <p>
+          Monitor project-level profitability with integrated accounting
+          capabilities.
+        </p>
+        <p>
+          ERPNext simplifies project management by breaking down projects into
+          milestones and tasks. Use templates, link projects to sales &
+          purchase, and keep expenses within budget.
+        </p>
+      </div>
+      <div class="col-md-6 text-center">
+        <img
+          src="{% static 'img/project.png' %}"
+          alt="project"
+          class="img-fluid rounded shadow"
+        />
+      </div>
+    </div>
+
+    <!-- Asset -->
+    <div class="row align-items-center mb-5 py-4 flex-md-row-reverse bg-light">
+      <div class="col-md-6">
+        <h2>Asset Management</h2>
+        <p>Manage asset lifecycle from acquisition to retirement, with ease.</p>
+        <p>
+          ERPNext makes asset management painless, from purchase to perishment,
+          IT infrastructure to equipment. One centralized system with powerful
+          tools to manage assets better.
+        </p>
+      </div>
+      <div class="col-md-6 text-center">
+        <img
+          src="{% static 'img/asset.jpeg' %}"
+          alt="Asset"
+          class="img-fluid rounded shadow"
+        />
+      </div>
+    </div>
+     <!-- Support -->
+    <div class="row align-items-center mb-5 py-4 bg-white">
+      <div class="col-md-6">
+        <h2>Support</h2>
+        <p>A self-service support portal to increase customer satisfaction.</p>
+        <p>
+          ERPNext’s support module simplifies customer issue handling by
+          centralizing tickets, automating workflows, and providing real-time
+          insights to meet SLAs and improve customer satisfaction.
+        </p>
+      </div>
+      <div class="col-md-6 text-center">
+        <img
+          src="{% static 'img/support.png' %}"
+          alt="project"
+          class="img-fluid rounded shadow"
+        />
+      </div>
+    </div>
+   
+  </div>
+</section>
+
+<!-- Industries -->
+<section class="py-5" data-aos="fade-up" data-aos-delay="600">
+  <div class="container text-center">
+    <h2 class="section-title mb-4">Industries We Cover</h2>
+    <div class="row justify-content-center gx-5">
+      <div class="col-6 col-md-4 col-lg-3 mb-3"><div class="industry-card p-3 border rounded shadow-sm bg-white"><h5>Industrial</h5></div></div>
+      <div class="col-6 col-md-4 col-lg-3 mb-3"><div class="industry-card p-3 border rounded shadow-sm bg-white"><h5>Energy & Utilities</h5></div></div>
+      <div class="col-6 col-md-4 col-lg-3 mb-3"><div class="industry-card p-3 border rounded shadow-sm bg-white"><h5>ICT</h5></div></div>
+      <div class="col-6 col-md-4 col-lg-3 mb-3"><div class="industry-card p-3 border rounded shadow-sm bg-white"><h5>Automotive</h5></div></div>
+      <div class="col-6 col-md-4 col-lg-3 mb-3"><div class="industry-card p-3 border rounded shadow-sm bg-white"><h5>Public Sector</h5></div></div>
+      <div class="col-6 col-md-4 col-lg-3 mb-3"><div class="industry-card p-3 border rounded shadow-sm bg-white"><h5>Logistics</h5></div></div>
+      <div class="col-6 col-md-4 col-lg-3 mb-3"><div class="industry-card p-3 border rounded shadow-sm bg-white"><h5>Services</h5></div></div>
+      <div class="col-6 col-md-4 col-lg-3 mb-3"><div class="industry-card p-3 border rounded shadow-sm bg-white"><h5>Consumer Goods</h5></div></div>
+      <div class="col-6 col-md-4 col-lg-3 mb-3"><div class="industry-card p-3 border rounded shadow-sm bg-white"><h5>Healthcare</h5></div></div>
     </div>
   </div>
 </section>
 
 <!-- Call to Action -->
-<section
-  class="bg-light text-center py-5"
-  data-aos="fade-up"
-  data-aos-delay="600"
->
+<section class="bg-primary text-white text-center py-5">
   <div class="container">
-    <h2>Ready to transform your business?</h2>
+    <h2>Ready to transform your enterprise?</h2>
     <p class="lead mb-4">
-      Contact us today to discuss how our solutions can help you grow.
+      Contact Piscium Solutions today to discuss how our tailored ERP solutions
+      can accelerate your growth.
     </p>
-    <a href="{% url 'contact' %}" class="btn btn-primary btn-lg rounded-pill"
-      >Contact Us</a
+    <a href="{% url 'contact' %}" class="btn btn-light btn-lg rounded-pill"
+      >Get Started</a
     >
   </div>
 </section>
